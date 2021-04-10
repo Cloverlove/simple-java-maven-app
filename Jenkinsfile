@@ -1,8 +1,8 @@
 pipeline {
-    agent { docker 'maven:3.3.3' } #代理，
-    stages {  #阶段。
-        stage('build') { #每一个阶段
-            steps {   #每一个步骤
+    agent { docker 'maven:3.3.3' } 
+    stages {  
+        stage('build') { 
+            steps {   
                 sh 'mvn --version'
             }
         }
